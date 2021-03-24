@@ -27,7 +27,7 @@ import java.io.FileOutputStream;
 
 public class MainDetalleProducto extends AppCompatActivity  {
 
-    private TextView NombreDetalle,Usuario,Descripcion,Precio,Precio2,Precio3,Precio4,Precio5,codigo,PrecioD,PrecioD2,PrecioD3,PrecioD4,PrecioD5,Existencias,Estados,Dolares;
+    private TextView NombreDetalle,UnidadMedida,Presentacion,Usuario,Descripcion,Precio,Precio2,Precio3,Precio4,Precio5,codigo,PrecioD,PrecioD2,PrecioD3,PrecioD4,PrecioD5,Existencias,Estados,Dolares;
     private ImageView imageView;
     private itemList itemDatail;
     String imagen="http://ferreteriaelcarpintero.com/images/productos/";
@@ -49,6 +49,8 @@ public class MainDetalleProducto extends AppCompatActivity  {
         Usuario=findViewById(R.id.Usuarios);
         NombreDetalle=findViewById(R.id.NombreDetalle);
         Descripcion=findViewById(R.id.DescripcionDetalle);
+        UnidadMedida=findViewById(R.id.UnidadMedidaDetalle);
+        Presentacion=findViewById(R.id.PresentacionDetalle);
         Dolares=findViewById(R.id.textdolares);
         Precio=findViewById(R.id.PrecioDetalle);
         Precio2=findViewById(R.id.Precio2Detalle);
@@ -76,6 +78,8 @@ public class MainDetalleProducto extends AppCompatActivity  {
         codigo.setText(itemDatail.getCodigo());
         NombreDetalle.setText(itemDatail.getNombre());
         Descripcion.setText(itemDatail.getMarca());
+        UnidadMedida.setText("UM: "+itemDatail.getUnidad_Med());
+        Presentacion.setText(itemDatail.getPresentacion());
         Precio.setText("P1: "+ "C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioC())));
         Precio2.setText("P2: "+"C$"+String.valueOf(String.format("%,.2f", itemDatail.getPrecioC2())));
         Precio3.setText("P3: "+"C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioC3())));
