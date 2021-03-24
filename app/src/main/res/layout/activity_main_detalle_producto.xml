@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainDetalleProducto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Usuarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Usuario"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/NombreDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/EstadoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/ExistenciaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Existencia"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imageDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Codigo"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/TextImagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02.5014"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marca"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/DescripcionDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipos de Precio"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Cordobas"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/textdolares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dolares"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/PrecioDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/PrecioDolarDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Precio2Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/PrecioDolar2Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Precio3Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/PrecioDolar3Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Precio4Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/PrecioDolar4Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/Precio5Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="50"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/PrecioDolar5Detalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

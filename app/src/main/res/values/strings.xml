@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Catalogo_Ushas</string>
+    <string-array name="User">
+        <item>Seleccione usuario</item>
+        <item>Facturacion</item>
+        <item>Vendedor</item>
+        <item>Marlon</item>
+        <item>Tania Lira</item>
+    </string-array>
+    <string name="mensaje">Contraseña incorrecta</string>
+    <string name="value_user">debe seleccionar un usuario</string>
+    <string name="value_pass_isemty">campo vacio de contraseña</string>
+</resources>

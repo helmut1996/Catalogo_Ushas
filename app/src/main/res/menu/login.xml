@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/exit"
+        android:title="cerrar sesion"
+       app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_exit_to_app"/>
+    <item
+        android:id="@+id/selected"
+        android:title="cerrar sesion"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_check_circle"
+        android:visible="false"/>
+</menu>
