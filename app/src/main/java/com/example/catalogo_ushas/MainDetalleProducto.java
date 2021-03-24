@@ -86,8 +86,8 @@ public class MainDetalleProducto extends AppCompatActivity  {
         PrecioD3.setText("PD3: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD3())));
         PrecioD4.setText("PD4: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD4())));
         PrecioD5.setText("PD5: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD5())));
-        Existencias.setText(String.valueOf(itemDatail.getExistencia()));
-        Estados.setText(itemDatail.getEstado());
+        Existencias.setText(String.valueOf("Cantidad disponible: "+itemDatail.getExistencia()));
+        Estados.setText("Estado: "+itemDatail.getEstado());
     }
 
     @Override
