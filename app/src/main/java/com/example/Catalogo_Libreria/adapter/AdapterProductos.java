@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas.adapter;
+package com.example.Catalogo_Libreria.adapter;
 
 import android.os.Build;
 import android.util.SparseBooleanArray;
@@ -12,8 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.catalogo_ushas.R;
-import com.example.catalogo_ushas.model.itemList;
+import com.example.Catalogo_Libreria.R;
+import com.example.Catalogo_Libreria.model.itemList;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

@@ -1,6 +1,4 @@
-package com.example.catalogo_ushas;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.Catalogo_Libreria;
 
 import android.app.Activity;
 import android.content.Context;

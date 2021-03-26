@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas;
+package com.example.Catalogo_Libreria;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +19,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.catalogo_ushas.model.itemList;
+import com.example.Catalogo_Libreria.model.itemList;
 import com.squareup.picasso.Picasso;
 
 import java.io.File;

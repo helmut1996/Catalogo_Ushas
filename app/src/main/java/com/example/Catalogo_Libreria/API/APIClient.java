@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas.API;
+package com.example.Catalogo_Libreria.API;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas.model;
+package com.example.Catalogo_Libreria.model;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas;
+package com.example.Catalogo_Libreria;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.catalogo_ushas;
+package com.example.Catalogo_Libreria;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,10 +18,10 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.catalogo_ushas.API.APIClient;
-import com.example.catalogo_ushas.API.InterfaceAPI;
-import com.example.catalogo_ushas.adapter.AdapterProductos;
-import com.example.catalogo_ushas.model.itemList;
+import com.example.Catalogo_Libreria.API.APIClient;
+import com.example.Catalogo_Libreria.API.InterfaceAPI;
+import com.example.Catalogo_Libreria.adapter.AdapterProductos;
+import com.example.Catalogo_Libreria.model.itemList;
 
 import java.util.List;
 

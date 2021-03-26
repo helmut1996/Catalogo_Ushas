@@ -1,7 +1,7 @@
-package com.example.catalogo_ushas.API;
+package com.example.Catalogo_Libreria.API;
 
 
-import com.example.catalogo_ushas.model.itemList;
+import com.example.Catalogo_Libreria.model.itemList;
 
 import java.util.List;
 

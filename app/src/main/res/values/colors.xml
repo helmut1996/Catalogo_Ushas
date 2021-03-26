@@ -9,14 +9,14 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="primary2">#E91E63</color>
-    <color name="primary_dark2">#C2185B</color>
-    <color name="primary_light2">#F8BBD0</color>
-    <color name="accent2">#795548</color>
+
+
+    <color name="primary2">#FFEB3B</color>
+    <color name="primary_dark2">#FBC02D</color>
+    <color name="primary_light2">#FFF9C4</color>
+    <color name="accent2">#FF9800</color>
     <color name="primary_text2">#212121</color>
     <color name="secondary_text2">#757575</color>
-
-    <color name="normal">#FF2700</color>
     <color name="presionado">#1E42FF</color>
     <color name="seleccionado">#2F8DFF</color>
 
