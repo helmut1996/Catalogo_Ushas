@@ -44,6 +44,7 @@ dependencies {
 
 
 
+    implementation 'com.github.chrisbanes:PhotoView:latest.release.here'
     implementation 'com.synnapps:carouselview:0.1.5'
 
     implementation 'androidx.appcompat:appcompat:1.2.0'

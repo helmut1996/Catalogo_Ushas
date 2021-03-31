@@ -184,12 +184,12 @@ public class MainDetalleProducto extends AppCompatActivity  {
             Precio2.setVisibility(View.VISIBLE);
             Dolares.setVisibility(View.VISIBLE);
             PrecioD2.setVisibility(View.VISIBLE);
-            Precio3.setVisibility(View.VISIBLE);
-            Precio4.setVisibility(View.VISIBLE);
-            Precio5.setVisibility(View.VISIBLE);
-            PrecioD3.setVisibility(View.VISIBLE);
-            PrecioD4.setVisibility(View.VISIBLE);
-            PrecioD5.setVisibility(View.VISIBLE);
+            Precio3.setVisibility(View.GONE);
+            Precio4.setVisibility(View.GONE);
+            Precio5.setVisibility(View.GONE);
+            PrecioD3.setVisibility(View.GONE);
+            PrecioD4.setVisibility(View.GONE);
+            PrecioD5.setVisibility(View.GONE);
         }else if (Usuario.getText().toString().equals("Tania Lira")){
 
 
