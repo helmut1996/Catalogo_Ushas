@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Catalogo_Ushas"
         android:usesCleartextTraffic="true">
         <activity android:name=".MainDetalleProducto"></activity>
-        <activity android:name=".MainProductos" />
+        <activity android:name=".MainProductos"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
