@@ -171,6 +171,7 @@ public class MainDetalleProducto extends AppCompatActivity  {
             Precio.setVisibility(View.VISIBLE);
             Precio2.setVisibility(View.VISIBLE);
             Dolares.setVisibility(View.VISIBLE);
+            PrecioD.setVisibility(View.VISIBLE);
             PrecioD2.setVisibility(View.VISIBLE);
             Precio3.setVisibility(View.VISIBLE);
             Precio4.setVisibility(View.VISIBLE);
@@ -183,6 +184,7 @@ public class MainDetalleProducto extends AppCompatActivity  {
             Precio.setVisibility(View.VISIBLE);
             Precio2.setVisibility(View.VISIBLE);
             Dolares.setVisibility(View.VISIBLE);
+            PrecioD.setVisibility(View.VISIBLE);
             PrecioD2.setVisibility(View.VISIBLE);
             Precio3.setVisibility(View.GONE);
             Precio4.setVisibility(View.GONE);
