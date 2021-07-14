@@ -16,37 +16,16 @@ public class itemList  implements Serializable {
     private double PrecioD3;
     private double PrecioD4;
     private double PrecioD5;
+    private double Precio_ESP;
     private String Imagen;
     private String Codigo;
     private String Unidad_Med;
     private String Presentacion;
     private int Existencia;
+    private int Unidad_Paq;
     private String Estado;
     private boolean isChecked = false;
     public itemList() {
-    }
-
-    public itemList(String nombre, String marca, double precioC, double precioC2, double precioC3, double precioC4, double precioC5, double precioD, double precioD1, double precioD2, double precioD3, double precioD4, double precioD5, String imagen, String codigo, String unidad_Med, String presentacion, int existencia, String estado, boolean isChecked) {
-        Nombre = nombre;
-        Marca = marca;
-        PrecioC = precioC;
-        PrecioC2 = precioC2;
-        PrecioC3 = precioC3;
-        PrecioC4 = precioC4;
-        PrecioC5 = precioC5;
-        PrecioD = precioD;
-        PrecioD1 = precioD1;
-        PrecioD2 = precioD2;
-        PrecioD3 = precioD3;
-        PrecioD4 = precioD4;
-        PrecioD5 = precioD5;
-        Imagen = imagen;
-        Codigo = codigo;
-        Unidad_Med = unidad_Med;
-        Presentacion = presentacion;
-        Existencia = existencia;
-        Estado = estado;
-        this.isChecked = isChecked;
     }
 
     public String getNombre() {
@@ -153,6 +132,14 @@ public class itemList  implements Serializable {
         PrecioD5 = precioD5;
     }
 
+    public double getPrecio_ESP() {
+        return Precio_ESP;
+    }
+
+    public void setPrecio_ESP(double precio_ESP) {
+        Precio_ESP = precio_ESP;
+    }
+
     public String getImagen() {
         return Imagen;
     }
@@ -191,6 +178,14 @@ public class itemList  implements Serializable {
 
     public void setExistencia(int existencia) {
         Existencia = existencia;
+    }
+
+    public int getUnidad_Paq() {
+        return Unidad_Paq;
+    }
+
+    public void setUnidad_Paq(int unidad_Paq) {
+        Unidad_Paq = unidad_Paq;
     }
 
     public String getEstado() {

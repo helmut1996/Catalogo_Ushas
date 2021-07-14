@@ -27,7 +27,7 @@ import java.io.FileOutputStream;
 
 public class MainDetalleProducto extends AppCompatActivity  {
 
-    private TextView NombreDetalle,UnidadMedida,Presentacion,Usuario,Descripcion,Precio,Precio2,Precio3,Precio4,Precio5,codigo,PrecioD,PrecioD2,PrecioD3,PrecioD4,PrecioD5,Existencias,Estados,Dolares;
+    private TextView text_Exis, NombreDetalle,Cajones,UnidadMedida,UnidadPaquete,Presentacion,Usuario,Descripcion,Precio,Precio2,Precio3,Precio4,Precio5,PrecioESP,codigo,PrecioD,PrecioD2,PrecioD3,PrecioD4,PrecioD5,Existencias,Estados,Dolares;
     private ImageView imageView;
     private itemList itemDatail;
     String imagen="http://ferreteriaelcarpintero.com/images/productos/";
@@ -42,21 +42,26 @@ public class MainDetalleProducto extends AppCompatActivity  {
         initView();
         initValues();
         CargarUsuario();
+        calculandoCajones();
 
     }
 
     public void initView(){
+        text_Exis=findViewById(R.id.TextExistenciaDetalle);
+        Cajones=findViewById(R.id.Cajones);
         Usuario=findViewById(R.id.Usuarios);
         NombreDetalle=findViewById(R.id.NombreDetalle);
         Descripcion=findViewById(R.id.DescripcionDetalle);
         UnidadMedida=findViewById(R.id.UnidadMedidaDetalle);
         Presentacion=findViewById(R.id.PresentacionDetalle);
+        UnidadPaquete=findViewById( R.id.UnidadMedidaDetalle);
         Dolares=findViewById(R.id.textdolares);
         Precio=findViewById(R.id.PrecioDetalle);
         Precio2=findViewById(R.id.Precio2Detalle);
         Precio3=findViewById(R.id.Precio3Detalle);
         Precio4=findViewById(R.id.Precio4Detalle);
         Precio5=findViewById(R.id.Precio5Detalle);
+        PrecioESP=findViewById(R.id.PrecioESPDetalle);
         PrecioD=findViewById(R.id.PrecioDolarDetalle);
         PrecioD2=findViewById(R.id.PrecioDolar2Detalle);
         PrecioD3=findViewById(R.id.PrecioDolar3Detalle);
@@ -85,15 +90,28 @@ public class MainDetalleProducto extends AppCompatActivity  {
         Precio3.setText("P3: "+"C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioC3())));
         Precio4.setText("P4:"+"C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioC4())));
         Precio5.setText("P5: "+"C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioC5())));
+        Precio5.setText("P_EP: "+"C$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecio_ESP())));
         PrecioD.setText("PD1: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD())));
         PrecioD2.setText("PD2: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD2())));
         PrecioD3.setText("PD3: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD3())));
         PrecioD4.setText("PD4: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD4())));
         PrecioD5.setText("PD5: "+"$"+String.valueOf(String.format("%,.2f",itemDatail.getPrecioD5())));
-        Existencias.setText(String.valueOf("Cantidad disponible: "+itemDatail.getExistencia()));
+        Existencias.setText( String.valueOf(itemDatail.getExistencia()));
+        UnidadPaquete.setText(String.valueOf(itemDatail.getUnidad_Paq()));
         Estados.setText("Estado: "+itemDatail.getEstado());
     }
 
+
+    public void calculandoCajones(){
+        int Exis=Integer.parseInt(Existencias.getText().toString());
+        int UnP=Integer.parseInt(UnidadPaquete.getText().toString());
+        int result;
+
+        result= Exis/UnP;
+        Cajones.setText("Cajones:"+Integer.toString(result));
+
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_shared,menu);
@@ -192,10 +210,13 @@ public class MainDetalleProducto extends AppCompatActivity  {
             PrecioD3.setVisibility(View.GONE);
             PrecioD4.setVisibility(View.GONE);
             PrecioD5.setVisibility(View.GONE);
+            Cajones.setVisibility(View.GONE);
+            PrecioESP.setVisibility(View.VISIBLE);
+
         }else if (Usuario.getText().toString().equals("Tania Lira")){
 
 
-
+            text_Exis.setVisibility(View.VISIBLE);
             Existencias.setVisibility(View.VISIBLE);
             Estados.setVisibility(View.VISIBLE);
             Dolares.setVisibility(View.VISIBLE);
@@ -203,11 +224,13 @@ public class MainDetalleProducto extends AppCompatActivity  {
             Precio3.setVisibility(View.VISIBLE);
             Precio4.setVisibility(View.VISIBLE);
             Precio5.setVisibility(View.VISIBLE);
+            PrecioESP.setVisibility(View.VISIBLE);
             PrecioD.setVisibility(View.VISIBLE);
             PrecioD2.setVisibility(View.VISIBLE);
             PrecioD3.setVisibility(View.VISIBLE);
             PrecioD4.setVisibility(View.VISIBLE);
             PrecioD5.setVisibility(View.VISIBLE);
+            UnidadPaquete.setVisibility(View.VISIBLE);
         }
 
     }

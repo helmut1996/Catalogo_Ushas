@@ -26,7 +26,7 @@ public class AdapterProductos extends RecyclerView.Adapter<AdapterProductos.Recy
     private RecyclerItemClick itemClick;
     private boolean modoSeleccion;
     private SparseBooleanArray seleccionados;
-    private String URL_IMAGE="http://ferreteriaelcarpintero.com/images/productos/";
+        private String URL_IMAGE="http://ferreteriaelcarpintero.com/images/productos/";
 
     private int cantidad;
 
@@ -55,11 +55,13 @@ public class AdapterProductos extends RecyclerView.Adapter<AdapterProductos.Recy
         holder.tvPrecio3.setText("C$"+String.valueOf( item.getPrecioC3()));
         holder.tvPrecio4.setText("C$"+String.valueOf( item.getPrecioC4()));
         holder.tvPrecio5.setText("C$"+String.valueOf( item.getPrecioC5()));
+        holder.tvPrecioESP.setText("C$"+String.valueOf( item.getPrecio_ESP()));
         holder.tvimagen.setText(item.getPresentacion());
         holder.tvunidad_medida.setText(item.getUnidad_Med());
         holder.tvcodigo.setText(item.getCodigo());
         holder.tvestado.setText(item.getEstado());
         holder.tvexistencia.setText(String.valueOf(item.getExistencia()));
+        holder.tvUnidadPaquete.setText(String.valueOf(item.getUnidad_Paq()));
         holder.tvprecio_d.setText(String.valueOf(item.getPrecioD()));
         holder.tvprecio_d2.setText(String.valueOf(item.getPrecioD2()));
         holder.tvprecio_d3.setText(String.valueOf(item.getPrecioD3()));
@@ -124,11 +126,12 @@ public class AdapterProductos extends RecyclerView.Adapter<AdapterProductos.Recy
     }
     public static class RecyclerHolder extends RecyclerView.ViewHolder{
 
-        TextView tvNombre,tvDescripcion,tvPrecio,tvPrecio2,tvPrecio3,tvPrecio4,tvPrecio5,tvimagen,tvunidad_medida,tvcodigo,tvprecio_d,tvprecio_d2,tvprecio_d3,tvprecio_d4,tvprecio_d5,tvexistencia,tvestado;
+        TextView  tvUnidadPaquete,tvNombre,tvDescripcion,tvPrecio,tvPrecio2,tvPrecio3,tvPrecio4,tvPrecio5, tvPrecioESP,tvimagen,tvunidad_medida,tvcodigo,tvprecio_d,tvprecio_d2,tvprecio_d3,tvprecio_d4,tvprecio_d5,tvexistencia,tvestado;
         ImageView image;
         public static CheckBox check;
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
+            tvUnidadPaquete =itemView.findViewById(R.id.tvUnidadPaquete);
             tvNombre=itemView.findViewById(R.id.NombreProducto);
             tvDescripcion=itemView.findViewById(R.id.Descripcion);
             tvPrecio=itemView.findViewById(R.id.precio);
@@ -136,6 +139,7 @@ public class AdapterProductos extends RecyclerView.Adapter<AdapterProductos.Recy
             tvPrecio3=itemView.findViewById(R.id.tvprecio3);
             tvPrecio4=itemView.findViewById(R.id.tvprecio4);
             tvPrecio5=itemView.findViewById(R.id.tvprecio5);
+            tvPrecioESP=itemView.findViewById(R.id.tvprecioESPECIAL);
             tvimagen=itemView.findViewById(R.id.textimagen);
             image=itemView.findViewById(R.id.imagen);
             tvunidad_medida=itemView.findViewById(R.id.unidad_medida);

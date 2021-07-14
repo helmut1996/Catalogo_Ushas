@@ -183,6 +183,24 @@
                 android:textStyle="bold"
                 android:visibility="gone"/>
             <TextView
+                android:id="@+id/tvprecioESPECIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Existencia"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tvUnidadPaquete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unidad Paquete"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <TextView
                 android:id="@+id/tvprecioD2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

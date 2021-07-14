@@ -72,10 +72,8 @@ para insertar Datos
         switch (view.getId()) {
 
             case R.id.btn_Login:
-                if (user.getSelectedItemPosition()==0){
+                if (user.getSelectedItemPosition()==1){
                     Toast.makeText(this,R.string.value_user,Toast.LENGTH_SHORT).show();
-                }else if (passw.getText().toString().isEmpty()){
-                    Toast.makeText(this,R.string.value_pass_isemty,Toast.LENGTH_SHORT).show();
                 }else if(username.equals("Facturacion") && password.equals("facturacion")){
                     saveLoginSharedPrefences(username);
                     finish();
@@ -93,7 +91,7 @@ para insertar Datos
                     Intent intent = new Intent(getApplicationContext(), MainProductos.class);
                     startActivity(intent);
                     finish();
-                }else if(username.equals("Tania Lira") && password.equals("lira")){
+                }else if(username.equals("Tania Lira")){
                     saveLoginSharedPrefences(username);
                     Intent intent = new Intent(getApplicationContext(), MainProductos.class);
                     startActivity(intent);

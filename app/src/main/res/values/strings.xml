@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Catalogo_Ushas</string>
     <string-array name="User">
-        <item>Seleccione usuario</item>
+        <item>Tania Lira</item>
         <item>Facturacion</item>
         <item>Vendedor</item>
         <item>Marlon</item>
